@@ -3,6 +3,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
+
+//i have 2 fonts 1 default for all, another should be applied
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -14,20 +16,19 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Purohit ",
-  description: "portfolio site of nikhil purohit, computer science and engineering",
+  title: "Nikhil Purohit",
+  description: "portfolio site of Nikhil Purohit | Computer Science and Engineering Student ",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
+        className={`${geistSans.className} ${geistMono.variable} antialiased`}>
         <ThemeProvider 
           attribute="class" 
           defaultTheme="dark" 
