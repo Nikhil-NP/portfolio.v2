@@ -3,7 +3,6 @@
 import { Sun, Moon } from "lucide-react";
 import { useTheme } from "next-themes"; // get-set currnet theme
 import { Button } from "@/components/ui/button";
-import { button } from "framer-motion/client";
 
 export function ThemeToggle(){
     const {theme, setTheme} = useTheme();
