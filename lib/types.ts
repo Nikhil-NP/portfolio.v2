@@ -1,4 +1,3 @@
-import { string } from "zod";
 
 //creating the interface for my data
 export interface PersonalInfo{
