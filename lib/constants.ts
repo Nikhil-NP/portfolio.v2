@@ -1,18 +1,24 @@
 import { Education, PersonalInfo, SocialLinks } from "./types";
 
-export const personalInfo : PersonalInfo ={
-    name:"Nikhil",
-    title:"final year UG CSE | loves webdevlopment,indie-hacking,reverse engineering and exploring new tech",
-    email:"nikhilrajpurohitnkp@gmail.com",
-    image:"to be added "    
-}
+export const personalInfo: PersonalInfo = {
+    name: "Nikhil Purohit",
+    greetings: "Hey there, I'm",
+    subTitle: "<Learning & Building />",
+    description: "Final-year CSE undergrad | Passionate about web development, indie hacking, reverse engineering, and exploring emerging technologies.",
+    email: "nikhilrajpurohitnkp@gmail.com",
+    image: "to be added"
+};
 
 export const socialLinks: SocialLinks = {
     x:"https://x.com/Nikhil_KP_",
-    github:"github.com/Nikhil-NP",
+    github:"https://github.com/Nikhil-NP",
     linkedIn:"https://www.linkedin.com/in/nikhil-purohit-452167314/",
-    email:"nikhilrajpurohitnkp@gmail.com"
+    email:"nikhilrajpurohitnkp@gmail.com",
+
 }
+
+export const resumeLink = "https://drive.google.com/file/d/1n6h9rXV8aN4dipLLmY_7pjyj9ceWzxSI/view?usp=sharing"
+
 
 export const education : Education={
     institution:"ATME College of Engineering",

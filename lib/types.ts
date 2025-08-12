@@ -1,7 +1,11 @@
+import { string } from "zod";
+
 //creating the interface for my data
 export interface PersonalInfo{
     name:string,
-    title:string,
+    greetings:string,
+    subTitle:string,
+    description:string,
     email:string,
     image:string,
 }
@@ -12,6 +16,7 @@ export interface SocialLinks{
     github:string,
     linkedIn:string,
     email:string,
+    
 }
 
 export interface Education{
@@ -19,3 +24,9 @@ export interface Education{
     degree:string,
     duration:string,
 }
+
+export interface NavItems{
+    href:string,
+    label:string,
+}
+
