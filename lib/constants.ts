@@ -1,7 +1,7 @@
 import { Education, PersonalInfo, SocialLinks } from "./types";
 
 export const personalInfo: PersonalInfo = {
-    name: "Nikhil Purohit",
+    name: "Nikhil Purohit.",
     greetings: "Hey there, I'm",
     subTitle: "<Learning & Building />",
     description: "Final-year CSE undergrad | Passionate about web development, indie hacking, reverse engineering, and exploring emerging technologies.",
