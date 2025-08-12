@@ -5,6 +5,7 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import TwitterIcon from "./xIcon";
 import { Inter } from "next/font/google";
 import { Button } from "./ui/button";
+import Link from "next/link";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -34,7 +35,7 @@ export default function HeroSection() {
             </h1>
 
             
-            <h2 className={`text-l sm:text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight bg-gradient-to-r from-foreground/70 to-muted-foreground/50 bg-clip-text text-transparent leading-tight ${inter.className}`}>
+            <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight bg-gradient-to-r from-foreground/70 to-muted-foreground/50 bg-clip-text text-transparent leading-tight ${inter.className}`}>
               {personalInfo.subTitle}
             </h2>
           </div>
@@ -60,20 +61,33 @@ export default function HeroSection() {
             <div className="flex items-center space-x-4 sm:space-x-6">
               {socialIcons.map((social) => {
                 const IconComponent = social.icon;
+                // For external links and mailto, using regular anchor tags
+                if (social.href.startsWith('http') || social.href.startsWith('mailto:')) {
+                  return (
+                    <a
+                      key={social.label}
+                      href={social.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="p-2 rounded-full hover:bg-accent hover:text-primary transition-all duration-200 hover:scale-110"
+                      aria-label={social.label}
+                    >
+                      <IconComponent className="h-5 w-5 sm:h-6 sm:w-6" />
+                    </a>
+                  );
+                }
+                
                 return (
-                  <a
+                  <Link
                     key={social.label}
                     href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
                     className="p-2 rounded-full hover:bg-accent hover:text-primary transition-all duration-200 hover:scale-110"
                     aria-label={social.label}
                   >
                     <IconComponent className="h-5 w-5 sm:h-6 sm:w-6" />
-                  </a>            
+                  </Link>
                 );
-              }
-              )}
+              })}
             </div>
           </div>
         </div>
