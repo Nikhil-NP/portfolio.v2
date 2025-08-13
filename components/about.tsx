@@ -7,11 +7,6 @@ import Image from "next/image";
 import TechStack from "./tech";
 
 
-
-
-
-
-
 const inter = Inter({
   subsets: ["latin"],
 });

@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Inter } from "next/font/google";
-
+import Image from "next/image";
 const inter = Inter({
   subsets: ["latin"],
 });
@@ -29,7 +29,7 @@ export default function TechStack() {
                 className="flex flex-col items-center group"
               >
                 <div className="w-12 h-12 flex items-center justify-center rounded-md bg-background/50 group-hover:bg-background shadow-sm group-hover:shadow-md transition-all duration-300">
-                  <img 
+                  <Image 
                     src={item.logo} 
                     alt={item.name} 
                     className="w-8 h-8 object-contain" 
