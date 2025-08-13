@@ -6,7 +6,7 @@ export const personalInfo: PersonalInfo = {
     subTitle: "<Learning & Building />",
     description: "Final-year CSE undergrad | Passionate about web development, indie hacking, reverse engineering, and exploring emerging technologies.",
     email: "nikhilrajpurohitnkp@gmail.com",
-    image: "to be added"
+    image: "/Profile/nik.jpg",
 };
 
 export const socialLinks: SocialLinks = {

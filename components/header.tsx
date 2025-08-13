@@ -22,7 +22,6 @@ export default function Header() {
     { href: "#projects", label: "Projects" },
   ];
 
-  const resumeLink = "https://drive.google.com/file/d/1n6h9rXV8aN4dipLLmY_7pjyj9ceWzxSI/view?usp=sharing";
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -33,14 +32,14 @@ export default function Header() {
   };
 
   return (
-    <header className="top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 pl-2">
       <MaxWidthContainer>
         <div className="flex h-16 items-center justify-between">
           <Link
             href="/"
             className={`text-3xl font-bold tracking-tight hover:text-primary transition-colors duration-200 ${inter.className}`}
           >
-            /\/
+            nik.
           </Link>
 
           {/* Desktop Navigation */}
@@ -51,7 +50,12 @@ export default function Header() {
                 href={item.href}
                 className={`text-lg font-medium hover:text-primary transition-colors duration-200 ${inter.className}`}
               >
+              <Button
+                variant="link"
+              >
                 {item.label}
+              </Button>
+                
               </Link>
             ))}
           </nav>

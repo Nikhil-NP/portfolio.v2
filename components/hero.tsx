@@ -4,7 +4,6 @@ import { personalInfo, socialLinks } from "@/lib/constants";
 import { Github, Linkedin, Mail } from "lucide-react";
 import TwitterIcon from "./xIcon";
 import { Inter } from "next/font/google";
-import { Button } from "./ui/button";
 import Link from "next/link";
 
 const inter = Inter({
