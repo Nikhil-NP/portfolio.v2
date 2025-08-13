@@ -26,10 +26,10 @@ export default function AboutSection() {
                 </h1>
                 {/* Main Description */}
                 <p className={`text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
-                    I'm a CSE grad who enjoys building web apps to solve real-world problems. I also love creating tools — whether it's automation, scraping, or anything that saves time and effort.
+                    I&apos;m a CSE grad who enjoys building web apps to solve real-world problems. I also love creating tools — whether it's automation, scraping, or anything that saves time and effort.
                 </p>
                 <p className={`text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
-                    Right now, I'm exploring web development, cloud, and DevOps, while staying tuned into daily tech trends.
+                    Right now, I&apos;m exploring web development, cloud, and DevOps, while staying tuned into daily tech trends.
                 </p>
                 {/* Education */}
                 <div className="bg-accent/30 border border-border/50 rounded-lg p-4">
