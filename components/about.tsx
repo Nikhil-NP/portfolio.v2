@@ -4,6 +4,12 @@ import { personalInfo, education } from "@/lib/constants";
 import { Inter } from "next/font/google";
 import { GraduationCap } from "lucide-react";
 import Image from "next/image";
+import TechStack from "./tech";
+
+
+
+
+
 
 
 const inter = Inter({
@@ -64,6 +70,8 @@ export default function AboutSection() {
                     </span>
                 )}
                 </div>
+            
+            <TechStack />
         </div>
     </section>
 

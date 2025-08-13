@@ -17,7 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Nikhil Purohit",
+  
+  title: "Nikhil  Purohit",
   description: "portfolio site of Nikhil Purohit | Computer Science and Engineering Student ",
 };
 
