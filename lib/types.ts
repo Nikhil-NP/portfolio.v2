@@ -7,6 +7,7 @@ export interface PersonalInfo{
     description:string,
     email:string,
     image:string,
+    rotatingSubTitle:Array<string>,
 }
 
 
@@ -37,5 +38,6 @@ export interface Projects{
     demourl?:string,
     liveurl?:string,
     image?:string,
+    
 }
 

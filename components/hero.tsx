@@ -5,12 +5,37 @@ import { Github, Linkedin, Mail } from "lucide-react";
 import TwitterIcon from "./xIcon";
 import { Inter } from "next/font/google";
 import Link from "next/link";
+import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+
 
 const inter = Inter({
   subsets: ["latin"],
 });
 
+const rotatingSubtitles = personalInfo.rotatingSubTitle;
+
+
 export default function HeroSection() {
+
+  const [currentSubtitle, setCurrentSubtitle] = useState(0);
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsVisible(false);
+      
+      setTimeout(() => {
+        setCurrentSubtitle((prev) => (prev + 1) % rotatingSubtitles.length);
+        setIsVisible(true);
+      }, 1000);
+    }, 6000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+
+
   const socialIcons = [
     { href: socialLinks.github, icon: Github, label: "GitHub" },
     { href: socialLinks.x, icon: TwitterIcon, label: "Twitter" },
@@ -19,7 +44,14 @@ export default function HeroSection() {
   ];
 
   return (
-    <section className="min-h-screen flex items-center justify-start py-20 px-4 sm:px-6 lg:px-8">
+    <motion.section
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
+      className="min-h-screen flex items-center"
+    >
+      
+      <section className="min-h-screen flex items-center justify-start py-20 px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-start text-left space-y-4 sm:space-y-6 w-full">
          
           <p className={`text-sm md:text-base text-muted-foreground ${inter.className}`}>
@@ -35,7 +67,7 @@ export default function HeroSection() {
 
             
             <h2 className={`text-xl sm:text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight bg-gradient-to-r from-foreground/70 to-muted-foreground/50 bg-clip-text text-transparent leading-tight ${inter.className}`}>
-              {personalInfo.subTitle}
+              {rotatingSubtitles[currentSubtitle]}
             </h2>
           </div>
 
@@ -91,5 +123,7 @@ export default function HeroSection() {
           </div>
         </div>
     </section>
+    </motion.section>
+    
   );
 }

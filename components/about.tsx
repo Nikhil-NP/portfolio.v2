@@ -60,7 +60,7 @@ export default function AboutSection() {
                 </div>
                 </div>
                 
-
+                
                 <div className="w-69 h-69 sm:w-70 sm:h-70 bg-muted/20 border border-border  flex items-center justify-center rounded-full overflow-hidden">
                 {personalInfo.image && personalInfo.image !== "to be added" ? (
                     <Image 

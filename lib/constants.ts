@@ -15,9 +15,17 @@ export const personalInfo: PersonalInfo = {
     name: "Nikhil Purohit.",
     greetings: "Hey there, I'm",
     subTitle: "<Learning & Building />",
-    description: "Final-year CSE undergrad | Passionate about web development, indie hacking, reverse engineering, and exploring emerging technologies.",
+    description: "Final-year Computer Science student with a passion for crafting digital solutions that matter. I build web applications, explore emerging technologies, and turn ideas into reality through clean code and thoughtful design.",
     email: "nikhilrajpurohitnkp@gmail.com",
     image: "/Profile/nikh.jpg",
+    rotatingSubTitle: [
+          "<Exploring Web and Data />",
+          "<Full Stack Developer />",
+          "<Problem Solver />",
+          "<Tech Enthusiast />",
+          "<npc trying to code. />",
+
+    ]
 };
 
 export const socialLinks: SocialLinks = {

@@ -22,7 +22,7 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS.
 
 1. **Clone the repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/Nikhil-NP/portfolio.v2
    cd portfoliov2
    ```
 
