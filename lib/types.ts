@@ -37,7 +37,5 @@ export interface Projects{
     demourl?:string,
     liveurl?:string,
     image?:string,
-    highlights:Array<string>,
-
 }
 
