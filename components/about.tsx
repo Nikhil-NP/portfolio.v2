@@ -26,7 +26,7 @@ export default function AboutSection() {
                 </h1>
                 {/* Main Description */}
                 <p className={`text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
-                    I&apos;m a CSE grad who enjoys building web apps to solve real-world problems. I also love creating tools — whether it's automation, scraping, or anything that saves time and effort.
+                    I&apos;m a CSE grad who enjoys building web apps to solve real-world problems. I also love creating tools — whether it&apos;s automation, scraping, or anything that saves time and effort.
                 </p>
                 <p className={`text-sm sm:text-base md:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
                     Right now, I&apos;m exploring web development, cloud, and DevOps, while staying tuned into daily tech trends.
