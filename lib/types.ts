@@ -29,3 +29,15 @@ export interface NavItems{
     label:string,
 }
 
+export interface Projects{
+    title:string,
+    description:string,
+    tech:Array<string>,
+    github:string,
+    demourl?:string,
+    liveurl?:string,
+    image?:string,
+    highlights:Array<string>,
+
+}
+
