@@ -21,7 +21,7 @@ export default function ProjectSection(){
                         Projects
                     </h1>
                     <p className={`text-sm sm:text-base md:text-lg text-muted-foreground max-w-2xl mx-auto ${inter.className}`}>
-                        Here are some of the projects I've built while exploring web development, automation, and problem-solving.
+                        Here are some of the projects I&apos;ve built while exploring web development, automation, and problem-solving.
                     </p>
                 </div>
 
