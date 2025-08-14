@@ -1,6 +1,17 @@
 {
-  "name": "portfoliov2",
-  "version": "0.1.0",
+  "name": "portfolio-v2",
+  "version": "2.0.0",
+  "description": "Personal portfolio website ",
+  "author": {
+    "name": "Nikhil Purohit",
+    "email": "nikhilrajpurohitnkp@gmail.com",
+    "url": "https://github.com/Nikhil-NP"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Nikhil-NP/portfolio-v2"
+  },
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

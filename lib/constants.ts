@@ -1,5 +1,16 @@
 import { Education, PersonalInfo, SocialLinks, Projects } from "./types";
 
+
+
+/**
+ * @fileoverview Personal portfolio data constants
+ * @author Nikhil Purohit 
+ * @created 2025-08-15
+ * @repository https://github.com/Nikhil-NP/portfolio-v2
+ */
+
+
+
 export const personalInfo: PersonalInfo = {
     name: "Nikhil Purohit.",
     greetings: "Hey there, I'm",
@@ -52,3 +63,7 @@ export const projects:Projects[] = [
     
   }
 ];
+
+
+
+
