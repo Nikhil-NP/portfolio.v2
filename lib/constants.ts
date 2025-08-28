@@ -17,7 +17,7 @@ export const personalInfo: PersonalInfo = {
     subTitle: "<Learning & Building />",
     description: "Final-year Computer Science student with a passion for crafting digital solutions that matter. I build web applications, explore emerging technologies, and turn ideas into reality through clean code and thoughtful design.",
     email: "nikhilrajpurohitnkp@gmail.com",
-    image: "/Profile/nik.png",
+    image: "/Profile/nik.jpg",
     rotatingSubTitle: [
           "<Exploring Web and Data />",
           "<Full Stack Developer />",
