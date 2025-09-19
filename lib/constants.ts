@@ -29,7 +29,7 @@ export const personalInfo: PersonalInfo = {
 };
 
 export const socialLinks: SocialLinks = {
-    x:"https://x.com/Nikhil_KP_",
+    x:"https://x.com/Nikh0p",
     github:"https://github.com/Nikhil-NP",
     linkedIn:"https://www.linkedin.com/in/nikhil-purohit-452167314/",
     email:"nikhilrajpurohitnkp@gmail.com",
