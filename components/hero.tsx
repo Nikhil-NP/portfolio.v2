@@ -28,7 +28,7 @@ export default function HeroSection() {
       setTimeout(() => {
         setCurrentSubtitle((prev) => (prev + 1) % rotatingSubtitles.length);
         setIsVisible(true);
-      }, 500);
+      }, 300);
     }, 5000);
 
     return () => clearInterval(interval);
