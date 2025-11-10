@@ -32,7 +32,7 @@ export default function AboutSection() {
                 
                 <div className="space-y-4">
                         <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
-                            I&apos;m a <span className="text-foreground font-medium">CSE Senior</span> who enjoys building web apps to solve real-world problems. I also love creating{" "}
+                            I&apos;m a <span className="text-foreground font-medium">Final year CSE </span> who enjoys building web apps to solve real-world problems. I also love creating{" "}
                             <span className="text-foreground font-medium">tools</span> — whether it&apos;s automation, scraping, or anything that saves time and effort.
                         </p>
                         <p className={`text-base sm:text-lg text-muted-foreground leading-relaxed ${inter.className}`}>
