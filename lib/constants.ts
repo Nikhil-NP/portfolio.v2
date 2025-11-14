@@ -56,6 +56,14 @@ export const projects:Projects[] = [
     demourl:"https://youtu.be/xXOHnJW8uvg?si=tOvMIBZtutoQ5KCM",
     
   },
+  { 
+    title: "Vibe Check",
+    description: "An intelligent sentiment analysis platform combining VADER, TextBlob, and Google Gemini AI for side-by-side comparison. Features emotion detection, vibe scoring, and AI-powered contextual insights.",
+    tech: ["FastAPI", "React", "TypeScript", "Gemini AI","TailwindCSS"],
+    github: "https://github.com/Nikhil-NP/vibe-check",
+    demourl:"https://vibe-check-three.vercel.app/,
+    
+  },
   {
     title: "Anime Recommendation Web App",
     description: "A Flask web app that recommends anime using the Jikan API with responsive Bootstrap frontend and dynamic streaming platform integration.",
