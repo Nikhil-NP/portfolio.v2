@@ -48,6 +48,14 @@ export const education : Education={
 
 
 export const projects:Projects[] = [
+
+ {
+      title: "Multi-Vehicle Route Optimizer",
+      description: "A route optimization system using Google OR-Tools constraint solver to generate balanced delivery routes across multiple vehicles. Features interactive Leaflet maps, Haversine distance calculations, and adaptive constraint generation to prevent solver failures.",
+      tech: ["Next.js", "Python", "OR-Tools", "Express.js", "Docker", "TypeScript"],
+      github: "https://github.com/Nikhil-NP/MDRS",
+      demourl: "https://multi-vehical-routing-soution.vercel.app/",
+  },
   {
     title: "Anonymous Grievance System",
     description: "A secure complaint management system with JWT authentication, email verification, and AI-powered content moderation using Google Gemini API.",
